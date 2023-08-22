@@ -1,0 +1,48 @@
+[2023-08-22 23:39:26,433] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ETL_products.insertar_data manual__2023-08-22T23:39:14.850038+00:00 [queued]>
+[2023-08-22 23:39:26,440] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ETL_products.insertar_data manual__2023-08-22T23:39:14.850038+00:00 [queued]>
+[2023-08-22 23:39:26,441] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22 23:39:26,441] {taskinstance.py:1377} INFO - Starting attempt 1 of 4
+[2023-08-22 23:39:26,442] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22 23:39:26,449] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): insertar_data> on 2023-08-22 23:39:14.850038+00:00
+[2023-08-22 23:39:26,452] {standard_task_runner.py:52} INFO - Started process 353 to run task
+[2023-08-22 23:39:26,455] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ETL_products', 'insertar_data', 'manual__2023-08-22T23:39:14.850038+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmpti7zw4al', '--error-file', '/tmp/tmpsh8cj0g0']
+[2023-08-22 23:39:26,457] {standard_task_runner.py:80} INFO - Job 12: Subtask insertar_data
+[2023-08-22 23:39:26,510] {task_command.py:371} INFO - Running <TaskInstance: ETL_products.insertar_data manual__2023-08-22T23:39:14.850038+00:00 [running]> on host 647aaf7d8bae
+[2023-08-22 23:39:26,555] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Sol
+AIRFLOW_CTX_DAG_ID=ETL_products
+AIRFLOW_CTX_TASK_ID=insertar_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-22T23:39:14.850038+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-08-22T23:39:14.850038+00:00
+[2023-08-22 23:39:26,557] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/functions.py", line 64, in insert_data
+    df=pd.read_csv(os.path.join("dags","transformed_data","data.csv"))
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/base_parser.py", line 229, in _open_handles
+    errors=kwds.get("encoding_errors", "strict"),
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: 'dags/transformed_data/data.csv'
+[2023-08-22 23:39:26,567] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_products, task_id=insertar_data, execution_date=20230822T233914, start_date=20230822T233926, end_date=20230822T233926
+[2023-08-22 23:39:26,574] {standard_task_runner.py:97} ERROR - Failed to execute job 12 for task insertar_data ([Errno 2] No such file or directory: 'dags/transformed_data/data.csv'; 353)
+[2023-08-22 23:39:26,587] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-08-22 23:39:26,607] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

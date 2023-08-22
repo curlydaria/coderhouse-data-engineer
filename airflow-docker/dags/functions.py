@@ -33,20 +33,20 @@ def get_data():
         page_response = requests.request("GET", page_endpoint, headers=headers)
         data.append(page_response.json()['data'])
         products_flat = [item for sublist in data for item in sublist] # flattens the nested list
-        with open(os.path.join("dags","raw_data","data.json"), "w") as json_file:
+        with open(os.path.join("raw_data","data.json"), "w") as json_file:
             json.dump(products_flat, json_file)
 
 
 # Function to transform data
 def process_data():       
-    with open(os.path.join("dags","raw_data","data.json"), "r") as json_file:
+    with open(os.path.join("raw_data","data.json"), "r") as json_file:
         loaded_data=json.load(json_file)
     df=pd.json_normalize(loaded_data, max_level=1, sep='_')
     df.drop('description', axis=1, inplace=True) # drop description column cause it always null or empty
     if df.columns.str.contains('image').any():  # drop column image
             df = df.drop('image', axis=1)
     df.drop_duplicates(inplace=True) # to drop duplicates if any
-    df.to_csv(os.path.join("dags","transformed_data","data.csv"), index=False)
+    df.to_csv(os.path.join("processed_data","data.csv"), index=False)
 
 # Finction to check if table exists
 def redshift_conn():
@@ -61,7 +61,7 @@ def redshift_conn():
 # Function to insert data
 def insert_data():
     #engine = create_engine(f'postgresql://{user}:{password}@{url}:{port}/{data_base}')
-    df=pd.read_csv(os.path.join("dags","transformed_data","data.csv"))
+    df=pd.read_csv(os.path.join("processed_data","data.csv"))
     try: 
         df.to_sql('products_new', engine, if_exists='replace', index=False)
     except SQLAlchemyError as e:
