@@ -1,0 +1,32 @@
+[2023-08-22 14:23:39,109] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: new_etl.extraer_data manual__2023-08-22T14:20:35.102438+00:00 [queued]>
+[2023-08-22 14:23:39,118] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: new_etl.extraer_data manual__2023-08-22T14:20:35.102438+00:00 [queued]>
+[2023-08-22 14:23:39,119] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22 14:23:39,120] {taskinstance.py:1377} INFO - Starting attempt 2 of 4
+[2023-08-22 14:23:39,120] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22 14:23:39,131] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): extraer_data> on 2023-08-22 14:20:35.102438+00:00
+[2023-08-22 14:23:39,140] {standard_task_runner.py:52} INFO - Started process 6112 to run task
+[2023-08-22 14:23:39,144] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'new_etl', 'extraer_data', 'manual__2023-08-22T14:20:35.102438+00:00', '--job-id', '152', '--raw', '--subdir', 'DAGS_FOLDER/etl2.py', '--cfg-path', '/tmp/tmpabswzn9e', '--error-file', '/tmp/tmpxa3zkg1f']
+[2023-08-22 14:23:39,146] {standard_task_runner.py:80} INFO - Job 152: Subtask extraer_data
+[2023-08-22 14:23:39,222] {task_command.py:371} INFO - Running <TaskInstance: new_etl.extraer_data manual__2023-08-22T14:20:35.102438+00:00 [running]> on host 0110d0e687e9
+[2023-08-22 14:23:39,315] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Sol
+AIRFLOW_CTX_DAG_ID=new_etl
+AIRFLOW_CTX_TASK_ID=extraer_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-22T14:20:35.102438+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-08-22T14:20:35.102438+00:00
+[2023-08-22 14:23:40,222] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/function_etl.py", line 45, in extraer_data
+    with open(os.path.join("raw_data","data.json"), "w") as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'raw_data/data.json'
+[2023-08-22 14:23:40,288] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=new_etl, task_id=extraer_data, execution_date=20230822T142035, start_date=20230822T142339, end_date=20230822T142340
+[2023-08-22 14:23:40,317] {standard_task_runner.py:97} ERROR - Failed to execute job 152 for task extraer_data ([Errno 2] No such file or directory: 'raw_data/data.json'; 6112)
+[2023-08-22 14:23:40,386] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-08-22 14:23:40,437] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

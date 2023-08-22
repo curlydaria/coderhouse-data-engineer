@@ -1,0 +1,704 @@
+[2023-08-22 21:06:51,955] {processor.py:153} INFO - Started process (PID=167) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:06:51,957] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:06:51,958] {logging_mixin.py:115} INFO - [2023-08-22 21:06:51,958] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:06:57,668] {logging_mixin.py:115} INFO - [2023-08-22 21:06:57,644] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:06:57,671] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:06:57,711] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 5.770 seconds
+[2023-08-22 21:07:08,217] {processor.py:153} INFO - Started process (PID=179) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:07:08,227] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:07:08,232] {logging_mixin.py:115} INFO - [2023-08-22 21:07:08,232] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:07:10,450] {logging_mixin.py:115} INFO - [2023-08-22 21:07:10,421] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:07:10,462] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:07:10,508] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 2.342 seconds
+[2023-08-22 21:07:20,709] {processor.py:153} INFO - Started process (PID=191) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:07:20,710] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:07:20,712] {logging_mixin.py:115} INFO - [2023-08-22 21:07:20,712] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:07:21,161] {logging_mixin.py:115} INFO - [2023-08-22 21:07:21,157] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:07:21,162] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:07:21,169] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.467 seconds
+[2023-08-22 21:07:31,333] {processor.py:153} INFO - Started process (PID=203) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:07:31,334] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:07:31,336] {logging_mixin.py:115} INFO - [2023-08-22 21:07:31,336] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:07:32,214] {logging_mixin.py:115} INFO - [2023-08-22 21:07:32,207] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:07:32,215] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:07:32,229] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.902 seconds
+[2023-08-22 21:07:42,441] {processor.py:153} INFO - Started process (PID=215) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:07:42,450] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:07:42,454] {logging_mixin.py:115} INFO - [2023-08-22 21:07:42,454] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:07:43,102] {logging_mixin.py:115} INFO - [2023-08-22 21:07:43,098] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:07:43,103] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:07:43,115] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.685 seconds
+[2023-08-22 21:07:53,428] {processor.py:153} INFO - Started process (PID=227) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:07:53,430] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:07:53,432] {logging_mixin.py:115} INFO - [2023-08-22 21:07:53,432] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:07:54,019] {logging_mixin.py:115} INFO - [2023-08-22 21:07:54,015] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:07:54,021] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:07:54,031] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.610 seconds
+[2023-08-22 21:08:04,227] {processor.py:153} INFO - Started process (PID=239) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:08:04,229] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:08:04,230] {logging_mixin.py:115} INFO - [2023-08-22 21:08:04,230] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:08:04,706] {logging_mixin.py:115} INFO - [2023-08-22 21:08:04,704] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:08:04,707] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:08:04,714] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.509 seconds
+[2023-08-22 21:08:14,983] {processor.py:153} INFO - Started process (PID=251) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:08:14,988] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:08:14,991] {logging_mixin.py:115} INFO - [2023-08-22 21:08:14,991] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:08:16,227] {logging_mixin.py:115} INFO - [2023-08-22 21:08:16,201] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:08:16,230] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:08:16,252] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 1.288 seconds
+[2023-08-22 21:08:26,475] {processor.py:153} INFO - Started process (PID=263) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:08:26,477] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:08:26,479] {logging_mixin.py:115} INFO - [2023-08-22 21:08:26,479] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:08:27,125] {logging_mixin.py:115} INFO - [2023-08-22 21:08:27,112] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:08:27,126] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:08:27,141] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.687 seconds
+[2023-08-22 21:08:37,386] {processor.py:153} INFO - Started process (PID=275) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:08:37,388] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:08:37,389] {logging_mixin.py:115} INFO - [2023-08-22 21:08:37,389] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:08:37,859] {logging_mixin.py:115} INFO - [2023-08-22 21:08:37,856] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:08:37,860] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:08:37,869] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.489 seconds
+[2023-08-22 21:08:48,076] {processor.py:153} INFO - Started process (PID=287) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:08:48,078] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:08:48,080] {logging_mixin.py:115} INFO - [2023-08-22 21:08:48,079] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:08:48,537] {logging_mixin.py:115} INFO - [2023-08-22 21:08:48,535] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:08:48,542] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:08:48,549] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.492 seconds
+[2023-08-22 21:08:58,836] {processor.py:153} INFO - Started process (PID=299) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:08:58,841] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:08:58,848] {logging_mixin.py:115} INFO - [2023-08-22 21:08:58,848] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:08:59,292] {logging_mixin.py:115} INFO - [2023-08-22 21:08:59,290] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:08:59,293] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:08:59,302] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.485 seconds
+[2023-08-22 21:09:09,479] {processor.py:153} INFO - Started process (PID=311) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:09:09,482] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:09:09,483] {logging_mixin.py:115} INFO - [2023-08-22 21:09:09,483] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:09:10,229] {logging_mixin.py:115} INFO - [2023-08-22 21:09:10,220] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:09:10,231] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:09:10,262] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.790 seconds
+[2023-08-22 21:09:20,574] {processor.py:153} INFO - Started process (PID=323) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:09:20,576] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:09:20,577] {logging_mixin.py:115} INFO - [2023-08-22 21:09:20,577] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:09:21,045] {logging_mixin.py:115} INFO - [2023-08-22 21:09:21,043] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:09:21,045] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:09:21,051] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.483 seconds
+[2023-08-22 21:09:31,298] {processor.py:153} INFO - Started process (PID=335) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:09:31,299] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:09:31,301] {logging_mixin.py:115} INFO - [2023-08-22 21:09:31,301] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:09:31,814] {logging_mixin.py:115} INFO - [2023-08-22 21:09:31,806] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:09:31,824] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:09:31,835] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.549 seconds
+[2023-08-22 21:09:42,021] {processor.py:153} INFO - Started process (PID=347) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:09:42,023] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:09:42,024] {logging_mixin.py:115} INFO - [2023-08-22 21:09:42,024] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:09:42,599] {logging_mixin.py:115} INFO - [2023-08-22 21:09:42,594] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:09:42,601] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:09:42,693] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.689 seconds
+[2023-08-22 21:09:52,901] {processor.py:153} INFO - Started process (PID=359) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:09:52,903] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:09:52,905] {logging_mixin.py:115} INFO - [2023-08-22 21:09:52,905] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:09:53,412] {logging_mixin.py:115} INFO - [2023-08-22 21:09:53,410] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:09:53,412] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:09:53,426] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.530 seconds
+[2023-08-22 21:10:03,592] {processor.py:153} INFO - Started process (PID=371) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:10:03,595] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:10:03,597] {logging_mixin.py:115} INFO - [2023-08-22 21:10:03,597] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:10:04,072] {logging_mixin.py:115} INFO - [2023-08-22 21:10:04,068] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:10:04,074] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:10:04,099] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.512 seconds
+[2023-08-22 21:10:14,252] {processor.py:153} INFO - Started process (PID=383) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:10:14,254] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:10:14,256] {logging_mixin.py:115} INFO - [2023-08-22 21:10:14,256] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:10:15,338] {logging_mixin.py:115} INFO - [2023-08-22 21:10:15,327] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:10:15,344] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:10:15,356] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 1.115 seconds
+[2023-08-22 21:10:25,679] {processor.py:153} INFO - Started process (PID=395) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:10:25,682] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:10:25,685] {logging_mixin.py:115} INFO - [2023-08-22 21:10:25,685] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:10:26,290] {logging_mixin.py:115} INFO - [2023-08-22 21:10:26,285] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:10:26,291] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:10:26,302] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.636 seconds
+[2023-08-22 21:10:36,490] {processor.py:153} INFO - Started process (PID=407) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:10:36,492] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:10:36,494] {logging_mixin.py:115} INFO - [2023-08-22 21:10:36,494] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:10:36,970] {logging_mixin.py:115} INFO - [2023-08-22 21:10:36,959] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:10:36,971] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:10:37,059] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.576 seconds
+[2023-08-22 21:10:47,576] {processor.py:153} INFO - Started process (PID=419) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:10:47,579] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:10:47,582] {logging_mixin.py:115} INFO - [2023-08-22 21:10:47,582] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:10:48,132] {logging_mixin.py:115} INFO - [2023-08-22 21:10:48,126] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:10:48,135] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:10:48,143] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.576 seconds
+[2023-08-22 21:10:58,383] {processor.py:153} INFO - Started process (PID=431) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:10:58,385] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:10:58,387] {logging_mixin.py:115} INFO - [2023-08-22 21:10:58,387] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:10:58,966] {logging_mixin.py:115} INFO - [2023-08-22 21:10:58,962] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:10:58,967] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:10:58,979] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.603 seconds
+[2023-08-22 21:11:09,209] {processor.py:153} INFO - Started process (PID=443) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:11:09,211] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:11:09,213] {logging_mixin.py:115} INFO - [2023-08-22 21:11:09,212] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:11:09,674] {logging_mixin.py:115} INFO - [2023-08-22 21:11:09,672] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:11:09,699] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:11:09,715] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.514 seconds
+[2023-08-22 21:11:19,900] {processor.py:153} INFO - Started process (PID=455) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:11:19,902] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:11:19,904] {logging_mixin.py:115} INFO - [2023-08-22 21:11:19,903] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:11:20,347] {logging_mixin.py:115} INFO - [2023-08-22 21:11:20,342] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:11:20,347] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:11:20,356] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.463 seconds
+[2023-08-22 21:11:30,538] {processor.py:153} INFO - Started process (PID=467) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:11:30,541] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:11:30,543] {logging_mixin.py:115} INFO - [2023-08-22 21:11:30,543] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:11:31,132] {logging_mixin.py:115} INFO - [2023-08-22 21:11:31,129] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:11:31,133] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:11:31,165] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.634 seconds
+[2023-08-22 21:11:41,374] {processor.py:153} INFO - Started process (PID=479) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:11:41,376] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:11:41,377] {logging_mixin.py:115} INFO - [2023-08-22 21:11:41,377] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:11:41,823] {logging_mixin.py:115} INFO - [2023-08-22 21:11:41,821] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:11:41,825] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:11:41,832] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.464 seconds
+[2023-08-22 21:11:52,017] {processor.py:153} INFO - Started process (PID=491) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:11:52,019] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:11:52,020] {logging_mixin.py:115} INFO - [2023-08-22 21:11:52,020] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:11:52,522] {logging_mixin.py:115} INFO - [2023-08-22 21:11:52,519] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:11:52,522] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:11:52,542] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.534 seconds
+[2023-08-22 21:12:02,786] {processor.py:153} INFO - Started process (PID=503) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:12:02,790] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:12:02,791] {logging_mixin.py:115} INFO - [2023-08-22 21:12:02,791] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:12:03,427] {logging_mixin.py:115} INFO - [2023-08-22 21:12:03,421] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:12:03,430] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:12:03,442] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.679 seconds
+[2023-08-22 21:12:13,701] {processor.py:153} INFO - Started process (PID=515) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:12:13,704] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:12:13,707] {logging_mixin.py:115} INFO - [2023-08-22 21:12:13,707] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:12:14,251] {logging_mixin.py:115} INFO - [2023-08-22 21:12:14,249] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:12:14,252] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:12:14,268] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.577 seconds
+[2023-08-22 21:12:24,460] {processor.py:153} INFO - Started process (PID=527) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:12:24,467] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:12:24,469] {logging_mixin.py:115} INFO - [2023-08-22 21:12:24,468] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:12:25,284] {logging_mixin.py:115} INFO - [2023-08-22 21:12:25,278] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:12:25,286] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:12:25,293] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.882 seconds
+[2023-08-22 21:12:35,528] {processor.py:153} INFO - Started process (PID=539) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:12:35,530] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:12:35,531] {logging_mixin.py:115} INFO - [2023-08-22 21:12:35,531] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:12:35,983] {logging_mixin.py:115} INFO - [2023-08-22 21:12:35,973] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:12:35,985] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:12:35,993] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.473 seconds
+[2023-08-22 21:12:46,186] {processor.py:153} INFO - Started process (PID=551) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:12:46,189] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:12:46,195] {logging_mixin.py:115} INFO - [2023-08-22 21:12:46,195] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:12:46,752] {logging_mixin.py:115} INFO - [2023-08-22 21:12:46,749] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:12:46,754] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:12:46,761] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.595 seconds
+[2023-08-22 21:12:56,915] {processor.py:153} INFO - Started process (PID=563) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:12:56,916] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:12:56,918] {logging_mixin.py:115} INFO - [2023-08-22 21:12:56,918] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:12:57,420] {logging_mixin.py:115} INFO - [2023-08-22 21:12:57,417] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/functions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/functions.py", line 12, in <module>
+    connection = Connection.get_connection_from_secrets("redshift-coderhouse")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `redshift-coderhouse` isn't defined
+[2023-08-22 21:12:57,421] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:12:57,434] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.529 seconds
+[2023-08-22 21:13:07,657] {processor.py:153} INFO - Started process (PID=575) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:13:07,658] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:13:07,660] {logging_mixin.py:115} INFO - [2023-08-22 21:13:07,660] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:13:08,118] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:13:08,125] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.477 seconds
+[2023-08-22 21:13:18,376] {processor.py:153} INFO - Started process (PID=587) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:13:18,377] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:13:18,390] {logging_mixin.py:115} INFO - [2023-08-22 21:13:18,389] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:13:18,880] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:13:18,888] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.521 seconds
+[2023-08-22 21:13:29,175] {processor.py:153} INFO - Started process (PID=599) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:13:29,177] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:13:29,178] {logging_mixin.py:115} INFO - [2023-08-22 21:13:29,178] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:13:29,853] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:13:29,866] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.700 seconds
+[2023-08-22 21:13:40,098] {processor.py:153} INFO - Started process (PID=611) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:13:40,100] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:13:40,102] {logging_mixin.py:115} INFO - [2023-08-22 21:13:40,101] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:13:40,614] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:13:40,626] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.565 seconds
+[2023-08-22 21:13:50,806] {processor.py:153} INFO - Started process (PID=623) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:13:50,808] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:13:50,810] {logging_mixin.py:115} INFO - [2023-08-22 21:13:50,810] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:13:51,359] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:13:51,368] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.575 seconds
+[2023-08-22 21:14:01,579] {processor.py:153} INFO - Started process (PID=635) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:14:01,580] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:14:01,581] {logging_mixin.py:115} INFO - [2023-08-22 21:14:01,581] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:14:02,095] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:14:02,107] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.534 seconds
+[2023-08-22 21:14:12,300] {processor.py:153} INFO - Started process (PID=647) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:14:12,305] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:14:12,308] {logging_mixin.py:115} INFO - [2023-08-22 21:14:12,308] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:14:13,188] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:14:13,217] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.946 seconds
+[2023-08-22 21:14:23,459] {processor.py:153} INFO - Started process (PID=659) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:14:23,461] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:14:23,465] {logging_mixin.py:115} INFO - [2023-08-22 21:14:23,465] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:14:23,971] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:14:23,983] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.529 seconds
+[2023-08-22 21:14:34,295] {processor.py:153} INFO - Started process (PID=671) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:14:34,297] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:14:34,298] {logging_mixin.py:115} INFO - [2023-08-22 21:14:34,298] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:14:34,885] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:14:34,897] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.608 seconds
+[2023-08-22 21:14:45,145] {processor.py:153} INFO - Started process (PID=683) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:14:45,147] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:14:45,149] {logging_mixin.py:115} INFO - [2023-08-22 21:14:45,149] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:14:45,694] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:14:45,697] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.571 seconds
+[2023-08-22 21:14:55,953] {processor.py:153} INFO - Started process (PID=698) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:14:55,955] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:14:55,957] {logging_mixin.py:115} INFO - [2023-08-22 21:14:55,956] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:14:58,039] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:14:58,044] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 2.105 seconds
+[2023-08-22 21:15:08,320] {processor.py:153} INFO - Started process (PID=719) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:15:08,322] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:15:08,324] {logging_mixin.py:115} INFO - [2023-08-22 21:15:08,324] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:15:09,539] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:15:09,548] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 1.236 seconds
+[2023-08-22 21:15:19,768] {processor.py:153} INFO - Started process (PID=731) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:15:19,769] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:15:19,771] {logging_mixin.py:115} INFO - [2023-08-22 21:15:19,771] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:15:20,601] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:15:20,619] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.858 seconds
+[2023-08-22 21:15:30,888] {processor.py:153} INFO - Started process (PID=743) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:15:30,891] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:15:30,894] {logging_mixin.py:115} INFO - [2023-08-22 21:15:30,894] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:15:31,440] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:15:31,452] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.579 seconds
+[2023-08-22 21:15:41,684] {processor.py:153} INFO - Started process (PID=755) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:15:41,686] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:15:41,688] {logging_mixin.py:115} INFO - [2023-08-22 21:15:41,688] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:15:42,466] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:15:42,473] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.807 seconds
+[2023-08-22 21:15:52,700] {processor.py:153} INFO - Started process (PID=767) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:15:52,702] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:15:52,704] {logging_mixin.py:115} INFO - [2023-08-22 21:15:52,703] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:15:53,319] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:15:53,331] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.640 seconds
+[2023-08-22 21:16:03,610] {processor.py:153} INFO - Started process (PID=779) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:16:03,611] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:16:03,613] {logging_mixin.py:115} INFO - [2023-08-22 21:16:03,613] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:16:04,220] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:16:04,232] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.630 seconds
+[2023-08-22 21:16:14,534] {processor.py:153} INFO - Started process (PID=791) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:16:14,536] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:16:14,538] {logging_mixin.py:115} INFO - [2023-08-22 21:16:14,538] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:16:15,041] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:16:15,055] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.531 seconds
+[2023-08-22 21:16:25,287] {processor.py:153} INFO - Started process (PID=803) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:16:25,289] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:16:25,291] {logging_mixin.py:115} INFO - [2023-08-22 21:16:25,290] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:16:25,967] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:16:25,982] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.705 seconds
+[2023-08-22 21:16:36,253] {processor.py:153} INFO - Started process (PID=815) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:16:36,259] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:16:36,265] {logging_mixin.py:115} INFO - [2023-08-22 21:16:36,265] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:16:36,764] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:16:36,773] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.529 seconds
+[2023-08-22 21:16:46,976] {processor.py:153} INFO - Started process (PID=827) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:16:46,982] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:16:46,989] {logging_mixin.py:115} INFO - [2023-08-22 21:16:46,989] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:16:47,542] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:16:47,547] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.594 seconds
+[2023-08-22 21:16:57,890] {processor.py:153} INFO - Started process (PID=839) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:16:57,892] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:16:57,894] {logging_mixin.py:115} INFO - [2023-08-22 21:16:57,894] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:16:58,565] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:16:58,572] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.690 seconds
+[2023-08-22 21:17:08,786] {processor.py:153} INFO - Started process (PID=851) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:17:08,788] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:17:08,789] {logging_mixin.py:115} INFO - [2023-08-22 21:17:08,789] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:17:09,379] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:17:09,400] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.627 seconds
+[2023-08-22 21:17:19,593] {processor.py:153} INFO - Started process (PID=863) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:17:19,595] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:17:19,597] {logging_mixin.py:115} INFO - [2023-08-22 21:17:19,597] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:17:20,117] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:17:20,124] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.543 seconds
+[2023-08-22 21:17:30,321] {processor.py:153} INFO - Started process (PID=875) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:17:30,323] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:17:30,326] {logging_mixin.py:115} INFO - [2023-08-22 21:17:30,326] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:17:31,465] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:17:31,487] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 1.175 seconds
+[2023-08-22 21:17:41,729] {processor.py:153} INFO - Started process (PID=887) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:17:41,734] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:17:41,740] {logging_mixin.py:115} INFO - [2023-08-22 21:17:41,740] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:17:42,441] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:17:42,451] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.729 seconds
+[2023-08-22 21:17:52,726] {processor.py:153} INFO - Started process (PID=899) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:17:52,729] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:17:52,737] {logging_mixin.py:115} INFO - [2023-08-22 21:17:52,736] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:17:53,248] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:17:53,252] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.545 seconds
+[2023-08-22 21:18:03,489] {processor.py:153} INFO - Started process (PID=911) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:18:03,490] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:18:03,492] {logging_mixin.py:115} INFO - [2023-08-22 21:18:03,492] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:18:04,019] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:18:04,026] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.549 seconds
+[2023-08-22 21:18:14,267] {processor.py:153} INFO - Started process (PID=923) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:18:14,269] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:18:14,271] {logging_mixin.py:115} INFO - [2023-08-22 21:18:14,271] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:18:14,918] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:18:14,946] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.688 seconds
+[2023-08-22 21:18:25,200] {processor.py:153} INFO - Started process (PID=935) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:18:25,206] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:18:25,216] {logging_mixin.py:115} INFO - [2023-08-22 21:18:25,216] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:18:26,474] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:18:26,486] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 1.295 seconds
+[2023-08-22 21:18:36,690] {processor.py:153} INFO - Started process (PID=947) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:18:36,691] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:18:36,692] {logging_mixin.py:115} INFO - [2023-08-22 21:18:36,692] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:18:37,301] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:18:37,306] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.623 seconds
+[2023-08-22 21:18:47,494] {processor.py:153} INFO - Started process (PID=959) to work on /opt/airflow/dags/functions.py
+[2023-08-22 21:18:47,496] {processor.py:641} INFO - Processing file /opt/airflow/dags/functions.py for tasks to queue
+[2023-08-22 21:18:47,498] {logging_mixin.py:115} INFO - [2023-08-22 21:18:47,498] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/functions.py
+[2023-08-22 21:18:47,998] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/functions.py
+[2023-08-22 21:18:48,003] {processor.py:161} INFO - Processing /opt/airflow/dags/functions.py took 0.519 seconds

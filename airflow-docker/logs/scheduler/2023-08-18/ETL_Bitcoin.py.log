@@ -1,0 +1,98 @@
+[2023-08-18 16:36:03,492] {processor.py:153} INFO - Started process (PID=165) to work on /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:03,496] {processor.py:641} INFO - Processing file /opt/airflow/dags/ETL_Bitcoin.py for tasks to queue
+[2023-08-18 16:36:03,498] {logging_mixin.py:115} INFO - [2023-08-18 16:36:03,498] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:05,208] {logging_mixin.py:115} INFO - [2023-08-18 16:36:05,204] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/ETL_Bitcoin.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_Bitcoin.py", line 17, in <module>
+    with open(dag_path+'/keys/'+"db.txt",'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/keys/db.txt'
+[2023-08-18 16:36:05,209] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:05,249] {processor.py:161} INFO - Processing /opt/airflow/dags/ETL_Bitcoin.py took 1.761 seconds
+[2023-08-18 16:36:15,527] {processor.py:153} INFO - Started process (PID=172) to work on /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:15,528] {processor.py:641} INFO - Processing file /opt/airflow/dags/ETL_Bitcoin.py for tasks to queue
+[2023-08-18 16:36:15,529] {logging_mixin.py:115} INFO - [2023-08-18 16:36:15,529] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:16,183] {logging_mixin.py:115} INFO - [2023-08-18 16:36:16,181] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/ETL_Bitcoin.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_Bitcoin.py", line 17, in <module>
+    with open(dag_path+'/keys/'+"db.txt",'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/keys/db.txt'
+[2023-08-18 16:36:16,184] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:16,238] {processor.py:161} INFO - Processing /opt/airflow/dags/ETL_Bitcoin.py took 0.716 seconds
+[2023-08-18 16:36:26,419] {processor.py:153} INFO - Started process (PID=178) to work on /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:26,421] {processor.py:641} INFO - Processing file /opt/airflow/dags/ETL_Bitcoin.py for tasks to queue
+[2023-08-18 16:36:26,423] {logging_mixin.py:115} INFO - [2023-08-18 16:36:26,423] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:26,853] {logging_mixin.py:115} INFO - [2023-08-18 16:36:26,851] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/ETL_Bitcoin.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_Bitcoin.py", line 17, in <module>
+    with open(dag_path+'/keys/'+"db.txt",'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/keys/db.txt'
+[2023-08-18 16:36:26,854] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:26,876] {processor.py:161} INFO - Processing /opt/airflow/dags/ETL_Bitcoin.py took 0.466 seconds
+[2023-08-18 16:36:36,978] {processor.py:153} INFO - Started process (PID=184) to work on /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:36,979] {processor.py:641} INFO - Processing file /opt/airflow/dags/ETL_Bitcoin.py for tasks to queue
+[2023-08-18 16:36:36,981] {logging_mixin.py:115} INFO - [2023-08-18 16:36:36,980] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:37,379] {logging_mixin.py:115} INFO - [2023-08-18 16:36:37,378] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/ETL_Bitcoin.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_Bitcoin.py", line 17, in <module>
+    with open(dag_path+'/keys/'+"db.txt",'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/keys/db.txt'
+[2023-08-18 16:36:37,380] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:37,413] {processor.py:161} INFO - Processing /opt/airflow/dags/ETL_Bitcoin.py took 0.443 seconds
+[2023-08-18 16:36:47,544] {processor.py:153} INFO - Started process (PID=190) to work on /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:47,546] {processor.py:641} INFO - Processing file /opt/airflow/dags/ETL_Bitcoin.py for tasks to queue
+[2023-08-18 16:36:47,547] {logging_mixin.py:115} INFO - [2023-08-18 16:36:47,547] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:47,925] {logging_mixin.py:115} INFO - [2023-08-18 16:36:47,923] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/ETL_Bitcoin.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_Bitcoin.py", line 17, in <module>
+    with open(dag_path+'/keys/'+"db.txt",'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/keys/db.txt'
+[2023-08-18 16:36:47,926] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:47,949] {processor.py:161} INFO - Processing /opt/airflow/dags/ETL_Bitcoin.py took 0.414 seconds
+[2023-08-18 16:36:58,097] {processor.py:153} INFO - Started process (PID=196) to work on /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:58,108] {processor.py:641} INFO - Processing file /opt/airflow/dags/ETL_Bitcoin.py for tasks to queue
+[2023-08-18 16:36:58,113] {logging_mixin.py:115} INFO - [2023-08-18 16:36:58,113] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:58,455] {logging_mixin.py:115} INFO - [2023-08-18 16:36:58,454] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/ETL_Bitcoin.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_Bitcoin.py", line 17, in <module>
+    with open(dag_path+'/keys/'+"db.txt",'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/keys/db.txt'
+[2023-08-18 16:36:58,456] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:36:58,474] {processor.py:161} INFO - Processing /opt/airflow/dags/ETL_Bitcoin.py took 0.384 seconds
+[2023-08-18 16:37:08,612] {processor.py:153} INFO - Started process (PID=202) to work on /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:37:08,615] {processor.py:641} INFO - Processing file /opt/airflow/dags/ETL_Bitcoin.py for tasks to queue
+[2023-08-18 16:37:08,616] {logging_mixin.py:115} INFO - [2023-08-18 16:37:08,616] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:37:09,251] {logging_mixin.py:115} INFO - [2023-08-18 16:37:09,245] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/ETL_Bitcoin.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_Bitcoin.py", line 17, in <module>
+    with open(dag_path+'/keys/'+"db.txt",'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/keys/db.txt'
+[2023-08-18 16:37:09,252] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_Bitcoin.py
+[2023-08-18 16:37:09,314] {processor.py:161} INFO - Processing /opt/airflow/dags/ETL_Bitcoin.py took 0.709 seconds

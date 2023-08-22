@@ -1,0 +1,23 @@
+[2023-08-22 15:25:54,326] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: new_etl.insertar_data manual__2023-08-22T15:25:41.037149+00:00 [queued]>
+[2023-08-22 15:25:54,333] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: new_etl.insertar_data manual__2023-08-22T15:25:41.037149+00:00 [queued]>
+[2023-08-22 15:25:54,333] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22 15:25:54,334] {taskinstance.py:1377} INFO - Starting attempt 1 of 4
+[2023-08-22 15:25:54,335] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22 15:25:54,347] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): insertar_data> on 2023-08-22 15:25:41.037149+00:00
+[2023-08-22 15:25:54,378] {standard_task_runner.py:52} INFO - Started process 14728 to run task
+[2023-08-22 15:25:54,384] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'new_etl', 'insertar_data', 'manual__2023-08-22T15:25:41.037149+00:00', '--job-id', '197', '--raw', '--subdir', 'DAGS_FOLDER/etl2.py', '--cfg-path', '/tmp/tmpg2xovhuw', '--error-file', '/tmp/tmpk9wknt7p']
+[2023-08-22 15:25:54,387] {standard_task_runner.py:80} INFO - Job 197: Subtask insertar_data
+[2023-08-22 15:25:54,465] {task_command.py:371} INFO - Running <TaskInstance: new_etl.insertar_data manual__2023-08-22T15:25:41.037149+00:00 [running]> on host 0110d0e687e9
+[2023-08-22 15:25:54,613] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Sol
+AIRFLOW_CTX_DAG_ID=new_etl
+AIRFLOW_CTX_TASK_ID=insertar_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-22T15:25:41.037149+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-08-22T15:25:41.037149+00:00
+[2023-08-22 15:26:06,787] {python.py:173} INFO - Done. Returned value was: None
+[2023-08-22 15:26:06,855] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=new_etl, task_id=insertar_data, execution_date=20230822T152541, start_date=20230822T152554, end_date=20230822T152606
+[2023-08-22 15:26:06,915] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-08-22 15:26:06,964] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

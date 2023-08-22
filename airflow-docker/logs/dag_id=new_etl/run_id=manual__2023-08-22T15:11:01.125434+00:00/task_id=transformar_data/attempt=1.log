@@ -1,0 +1,23 @@
+[2023-08-22 15:11:07,710] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: new_etl.transformar_data manual__2023-08-22T15:11:01.125434+00:00 [queued]>
+[2023-08-22 15:11:07,718] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: new_etl.transformar_data manual__2023-08-22T15:11:01.125434+00:00 [queued]>
+[2023-08-22 15:11:07,719] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22 15:11:07,720] {taskinstance.py:1377} INFO - Starting attempt 1 of 4
+[2023-08-22 15:11:07,720] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22 15:11:07,729] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): transformar_data> on 2023-08-22 15:11:01.125434+00:00
+[2023-08-22 15:11:07,739] {standard_task_runner.py:52} INFO - Started process 12426 to run task
+[2023-08-22 15:11:07,743] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'new_etl', 'transformar_data', 'manual__2023-08-22T15:11:01.125434+00:00', '--job-id', '189', '--raw', '--subdir', 'DAGS_FOLDER/etl2.py', '--cfg-path', '/tmp/tmp7w60wwx3', '--error-file', '/tmp/tmpiun07u46']
+[2023-08-22 15:11:07,745] {standard_task_runner.py:80} INFO - Job 189: Subtask transformar_data
+[2023-08-22 15:11:07,813] {task_command.py:371} INFO - Running <TaskInstance: new_etl.transformar_data manual__2023-08-22T15:11:01.125434+00:00 [running]> on host 0110d0e687e9
+[2023-08-22 15:11:07,867] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Sol
+AIRFLOW_CTX_DAG_ID=new_etl
+AIRFLOW_CTX_TASK_ID=transformar_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-22T15:11:01.125434+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-08-22T15:11:01.125434+00:00
+[2023-08-22 15:11:07,899] {python.py:173} INFO - Done. Returned value was: None
+[2023-08-22 15:11:07,922] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=new_etl, task_id=transformar_data, execution_date=20230822T151101, start_date=20230822T151107, end_date=20230822T151107
+[2023-08-22 15:11:07,957] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-08-22 15:11:08,101] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

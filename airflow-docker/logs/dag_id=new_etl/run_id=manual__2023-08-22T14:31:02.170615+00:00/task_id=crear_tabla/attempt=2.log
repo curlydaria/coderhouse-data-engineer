@@ -1,0 +1,80 @@
+[2023-08-22 14:37:16,007] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: new_etl.crear_tabla manual__2023-08-22T14:31:02.170615+00:00 [queued]>
+[2023-08-22 14:37:16,015] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: new_etl.crear_tabla manual__2023-08-22T14:31:02.170615+00:00 [queued]>
+[2023-08-22 14:37:16,016] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22 14:37:16,033] {taskinstance.py:1377} INFO - Starting attempt 2 of 4
+[2023-08-22 14:37:16,062] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22 14:37:16,121] {taskinstance.py:1397} INFO - Executing <Task(RedshiftSQLOperator): crear_tabla> on 2023-08-22 14:31:02.170615+00:00
+[2023-08-22 14:37:16,139] {standard_task_runner.py:52} INFO - Started process 7902 to run task
+[2023-08-22 14:37:16,150] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'new_etl', 'crear_tabla', 'manual__2023-08-22T14:31:02.170615+00:00', '--job-id', '184', '--raw', '--subdir', 'DAGS_FOLDER/etl2.py', '--cfg-path', '/tmp/tmpq4vxxw10', '--error-file', '/tmp/tmpfxk50mre']
+[2023-08-22 14:37:16,159] {standard_task_runner.py:80} INFO - Job 184: Subtask crear_tabla
+[2023-08-22 14:37:16,290] {task_command.py:371} INFO - Running <TaskInstance: new_etl.crear_tabla manual__2023-08-22T14:31:02.170615+00:00 [running]> on host 0110d0e687e9
+[2023-08-22 14:37:16,348] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Sol
+AIRFLOW_CTX_DAG_ID=new_etl
+AIRFLOW_CTX_TASK_ID=crear_tabla
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-22T14:31:02.170615+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-08-22T14:31:02.170615+00:00
+[2023-08-22 14:37:16,349] {redshift_sql.py:76} INFO - Executing statement: 
+        create table if not exists sol_debenedet_coderhouse.products_new (
+            _id varchar(25),
+            title varchar(25),
+            price float,
+            createdAt timestamp,
+            updatedAt timestamp,
+            slug varchar(100),
+            category__id varchar(25),
+            category_name varchar(50),
+            category_slug varchar(100),
+            createdBy_role varchar(25),
+            createdBy__id varchar(25),
+            createdBy_name varchar(25),
+            primary key(_id, createdAt)
+            );
+            
+[2023-08-22 14:37:16,358] {base.py:68} INFO - Using connection ID 'redshift-coderhouse' for task execution.
+[2023-08-22 14:37:17,817] {dbapi.py:231} INFO - Running statement: 
+        create table if not exists sol_debenedet_coderhouse.products_new (
+            _id varchar(25),
+            title varchar(25),
+            price float,
+            createdAt timestamp,
+            updatedAt timestamp,
+            slug varchar(100),
+            category__id varchar(25),
+            category_name varchar(50),
+            category_slug varchar(100),
+            createdBy_role varchar(25),
+            createdBy__id varchar(25),
+            createdBy_name varchar(25),
+            primary key(_id, createdAt)
+            );
+            , parameters: None
+[2023-08-22 14:37:18,000] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/core.py", line 1631, in execute
+    ps = cache["ps"][key]
+KeyError: ('\n        create table if not exists sol_debenedet_coderhouse.products_new (\n            _id varchar(25),\n            title varchar(25),\n            price float,\n            createdAt timestamp,\n            updatedAt timestamp,\n            slug varchar(100),\n            category__id varchar(25),\n            category_name varchar(50),\n            category_slug varchar(100),\n            createdBy_role varchar(25),\n            createdBy__id varchar(25),\n            createdBy_name varchar(25),\n            primary key(_id, createdAt)\n            );\n            ', ())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/operators/redshift_sql.py", line 78, in execute
+    hook.run(self.sql, autocommit=self.autocommit, parameters=self.parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 211, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 235, in _run_command
+    cur.execute(sql_statement)
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/cursor.py", line 240, in execute
+    self._c.execute(self, operation, args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/core.py", line 1701, in execute
+    self.handle_messages(cursor)
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/core.py", line 1969, in handle_messages
+    raise self.error
+redshift_connector.error.ProgrammingError: {'S': 'ERROR', 'C': '3F000', 'M': 'schema "sol_debenedet_coderhouse" does not exist', 'F': '../src/pg/src/mssql/mssql_utils.c', 'L': '244', 'R': 'processRelationInternal'}
+[2023-08-22 14:37:18,087] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=new_etl, task_id=crear_tabla, execution_date=20230822T143102, start_date=20230822T143716, end_date=20230822T143718
+[2023-08-22 14:37:18,125] {standard_task_runner.py:97} ERROR - Failed to execute job 184 for task crear_tabla ({'S': 'ERROR', 'C': '3F000', 'M': 'schema "sol_debenedet_coderhouse" does not exist', 'F': '../src/pg/src/mssql/mssql_utils.c', 'L': '244', 'R': 'processRelationInternal'}; 7902)
+[2023-08-22 14:37:18,188] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-08-22 14:37:18,240] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

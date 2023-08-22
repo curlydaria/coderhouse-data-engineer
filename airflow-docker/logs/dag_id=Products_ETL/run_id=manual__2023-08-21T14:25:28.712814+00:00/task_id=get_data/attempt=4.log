@@ -1,0 +1,30 @@
+[2023-08-21 14:36:24,030] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Products_ETL.get_data manual__2023-08-21T14:25:28.712814+00:00 [queued]>
+[2023-08-21 14:36:24,082] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Products_ETL.get_data manual__2023-08-21T14:25:28.712814+00:00 [queued]>
+[2023-08-21 14:36:24,084] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-21 14:36:24,087] {taskinstance.py:1377} INFO - Starting attempt 4 of 6
+[2023-08-21 14:36:24,088] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-21 14:36:24,157] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): get_data> on 2023-08-21 14:25:28.712814+00:00
+[2023-08-21 14:36:24,221] {standard_task_runner.py:52} INFO - Started process 396 to run task
+[2023-08-21 14:36:24,277] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'Products_ETL', 'get_data', 'manual__2023-08-21T14:25:28.712814+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmpvq9eojas', '--error-file', '/tmp/tmpt__mxqcd']
+[2023-08-21 14:36:24,283] {standard_task_runner.py:80} INFO - Job 50: Subtask get_data
+[2023-08-21 14:36:24,720] {task_command.py:371} INFO - Running <TaskInstance: Products_ETL.get_data manual__2023-08-21T14:25:28.712814+00:00 [running]> on host 0110d0e687e9
+[2023-08-21 14:36:24,931] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Sol
+AIRFLOW_CTX_DAG_ID=Products_ETL
+AIRFLOW_CTX_TASK_ID=get_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-21T14:25:28.712814+00:00
+AIRFLOW_CTX_TRY_NUMBER=4
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-08-21T14:25:28.712814+00:00
+[2023-08-21 14:36:24,938] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+TypeError: get_and_transform_Data() missing 1 required positional argument: 'pages'
+[2023-08-21 14:36:24,962] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=Products_ETL, task_id=get_data, execution_date=20230821T142528, start_date=20230821T143624, end_date=20230821T143624
+[2023-08-21 14:36:24,975] {standard_task_runner.py:97} ERROR - Failed to execute job 50 for task get_data (get_and_transform_Data() missing 1 required positional argument: 'pages'; 396)
+[2023-08-21 14:36:25,032] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-08-21 14:36:25,189] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

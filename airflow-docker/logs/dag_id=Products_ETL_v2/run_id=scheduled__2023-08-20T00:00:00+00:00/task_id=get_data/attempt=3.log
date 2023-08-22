@@ -1,0 +1,36 @@
+[2023-08-21 15:00:36,357] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Products_ETL_v2.get_data scheduled__2023-08-20T00:00:00+00:00 [queued]>
+[2023-08-21 15:00:36,363] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Products_ETL_v2.get_data scheduled__2023-08-20T00:00:00+00:00 [queued]>
+[2023-08-21 15:00:36,364] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-21 15:00:36,364] {taskinstance.py:1377} INFO - Starting attempt 3 of 6
+[2023-08-21 15:00:36,365] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-21 15:00:36,378] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): get_data> on 2023-08-20 00:00:00+00:00
+[2023-08-21 15:00:36,386] {standard_task_runner.py:52} INFO - Started process 1896 to run task
+[2023-08-21 15:00:36,405] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'Products_ETL_v2', 'get_data', 'scheduled__2023-08-20T00:00:00+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/myETL.py', '--cfg-path', '/tmp/tmpdqv4zdev', '--error-file', '/tmp/tmpzatot5sn']
+[2023-08-21 15:00:36,416] {standard_task_runner.py:80} INFO - Job 62: Subtask get_data
+[2023-08-21 15:00:36,585] {task_command.py:371} INFO - Running <TaskInstance: Products_ETL_v2.get_data scheduled__2023-08-20T00:00:00+00:00 [running]> on host 0110d0e687e9
+[2023-08-21 15:00:36,709] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Sol
+AIRFLOW_CTX_DAG_ID=Products_ETL_v2
+AIRFLOW_CTX_TASK_ID=get_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-08-20T00:00:00+00:00
+[2023-08-21 15:00:36,741] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/myETL.py", line 55, in get_and_transform_data
+    df = pd.json_normalize(products_flat, max_level=1, sep='_')
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/json/_normalize.py", line 438, in _json_normalize
+    if any([isinstance(x, dict) for x in y.values()] for y in data):
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/json/_normalize.py", line 438, in <genexpr>
+    if any([isinstance(x, dict) for x in y.values()] for y in data):
+AttributeError: 'str' object has no attribute 'values'
+[2023-08-21 15:00:36,774] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=Products_ETL_v2, task_id=get_data, execution_date=20230820T000000, start_date=20230821T150036, end_date=20230821T150036
+[2023-08-21 15:00:36,784] {standard_task_runner.py:97} ERROR - Failed to execute job 62 for task get_data ('str' object has no attribute 'values'; 1896)
+[2023-08-21 15:00:36,807] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-08-21 15:00:36,861] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
