@@ -1,4 +1,4 @@
-# Coderhouse's Data Engineering Example Final Project
+# Coderhouse's Data Engineering Final Project
 ### Developed by Sol De Benedet
 ## Requirements
 Have Docker
