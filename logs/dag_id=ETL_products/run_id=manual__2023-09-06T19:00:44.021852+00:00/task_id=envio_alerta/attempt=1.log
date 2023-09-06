@@ -1,0 +1,24 @@
+[2023-09-06 19:01:05,177] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ETL_products.envio_alerta manual__2023-09-06T19:00:44.021852+00:00 [queued]>
+[2023-09-06 19:01:05,182] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ETL_products.envio_alerta manual__2023-09-06T19:00:44.021852+00:00 [queued]>
+[2023-09-06 19:01:05,183] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-06 19:01:05,183] {taskinstance.py:1377} INFO - Starting attempt 1 of 4
+[2023-09-06 19:01:05,183] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-06 19:01:05,195] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): envio_alerta> on 2023-09-06 19:00:44.021852+00:00
+[2023-09-06 19:01:05,204] {standard_task_runner.py:52} INFO - Started process 972 to run task
+[2023-09-06 19:01:05,211] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ETL_products', 'envio_alerta', 'manual__2023-09-06T19:00:44.021852+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmp4g584j_d', '--error-file', '/tmp/tmpts80lmer']
+[2023-09-06 19:01:05,214] {standard_task_runner.py:80} INFO - Job 90: Subtask envio_alerta
+[2023-09-06 19:01:05,278] {task_command.py:371} INFO - Running <TaskInstance: ETL_products.envio_alerta manual__2023-09-06T19:00:44.021852+00:00 [running]> on host 889c80a1bf70
+[2023-09-06 19:01:05,368] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Sol
+AIRFLOW_CTX_DAG_ID=ETL_products
+AIRFLOW_CTX_TASK_ID=envio_alerta
+AIRFLOW_CTX_EXECUTION_DATE=2023-09-06T19:00:44.021852+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-09-06T19:00:44.021852+00:00
+[2023-09-06 19:01:07,447] {functions.py:103} INFO - Email sent successfully!
+[2023-09-06 19:01:07,455] {python.py:173} INFO - Done. Returned value was: None
+[2023-09-06 19:01:07,521] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=ETL_products, task_id=envio_alerta, execution_date=20230906T190044, start_date=20230906T190105, end_date=20230906T190107
+[2023-09-06 19:01:07,593] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-09-06 19:01:07,665] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,24 @@
+[2023-09-06 19:00:49,656] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ETL_products.extraer_data manual__2023-09-06T19:00:44.021852+00:00 [queued]>
+[2023-09-06 19:00:49,661] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ETL_products.extraer_data manual__2023-09-06T19:00:44.021852+00:00 [queued]>
+[2023-09-06 19:00:49,662] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-06 19:00:49,662] {taskinstance.py:1377} INFO - Starting attempt 1 of 4
+[2023-09-06 19:00:49,662] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-06 19:00:49,669] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): extraer_data> on 2023-09-06 19:00:44.021852+00:00
+[2023-09-06 19:00:49,674] {standard_task_runner.py:52} INFO - Started process 946 to run task
+[2023-09-06 19:00:49,680] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ETL_products', 'extraer_data', 'manual__2023-09-06T19:00:44.021852+00:00', '--job-id', '87', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmpep07vw82', '--error-file', '/tmp/tmpvztg8mf1']
+[2023-09-06 19:00:49,681] {standard_task_runner.py:80} INFO - Job 87: Subtask extraer_data
+[2023-09-06 19:00:49,729] {task_command.py:371} INFO - Running <TaskInstance: ETL_products.extraer_data manual__2023-09-06T19:00:44.021852+00:00 [running]> on host 889c80a1bf70
+[2023-09-06 19:00:49,775] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Sol
+AIRFLOW_CTX_DAG_ID=ETL_products
+AIRFLOW_CTX_TASK_ID=extraer_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-09-06T19:00:44.021852+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-09-06T19:00:44.021852+00:00
+[2023-09-06 19:01:03,548] {functions.py:53} INFO - Cantidad de productos: 20
+[2023-09-06 19:01:03,571] {python.py:173} INFO - Done. Returned value was: 2023-09-06_raw_data.csv
+[2023-09-06 19:01:03,609] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=ETL_products, task_id=extraer_data, execution_date=20230906T190044, start_date=20230906T190049, end_date=20230906T190103
+[2023-09-06 19:01:03,640] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-09-06 19:01:03,684] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

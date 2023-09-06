@@ -1,0 +1,25 @@
+[2023-09-06 19:00:45,228] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ETL_products.crear_tabla manual__2023-09-06T19:00:44.021852+00:00 [queued]>
+[2023-09-06 19:00:45,238] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ETL_products.crear_tabla manual__2023-09-06T19:00:44.021852+00:00 [queued]>
+[2023-09-06 19:00:45,239] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-06 19:00:45,240] {taskinstance.py:1377} INFO - Starting attempt 1 of 4
+[2023-09-06 19:00:45,240] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-06 19:00:45,249] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): crear_tabla> on 2023-09-06 19:00:44.021852+00:00
+[2023-09-06 19:00:45,254] {standard_task_runner.py:52} INFO - Started process 937 to run task
+[2023-09-06 19:00:45,257] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ETL_products', 'crear_tabla', 'manual__2023-09-06T19:00:44.021852+00:00', '--job-id', '86', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmpnac7r0bh', '--error-file', '/tmp/tmp1c966flr']
+[2023-09-06 19:00:45,259] {standard_task_runner.py:80} INFO - Job 86: Subtask crear_tabla
+[2023-09-06 19:00:45,308] {task_command.py:371} INFO - Running <TaskInstance: ETL_products.crear_tabla manual__2023-09-06T19:00:44.021852+00:00 [running]> on host 889c80a1bf70
+[2023-09-06 19:00:45,359] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Sol
+AIRFLOW_CTX_DAG_ID=ETL_products
+AIRFLOW_CTX_TASK_ID=crear_tabla
+AIRFLOW_CTX_EXECUTION_DATE=2023-09-06T19:00:44.021852+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-09-06T19:00:44.021852+00:00
+[2023-09-06 19:00:47,835] {functions.py:26} INFO - Connected to Redshift successfully!
+[2023-09-06 19:00:48,335] {functions.py:34} INFO - Table created successfully!
+[2023-09-06 19:00:48,339] {python.py:173} INFO - Done. Returned value was: None
+[2023-09-06 19:00:48,382] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=ETL_products, task_id=crear_tabla, execution_date=20230906T190044, start_date=20230906T190045, end_date=20230906T190048
+[2023-09-06 19:00:48,450] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-09-06 19:00:48,497] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

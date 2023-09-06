@@ -1,0 +1,24 @@
+[2023-09-06 18:51:04,658] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ETL_products.insertar_data manual__2023-09-06T18:50:53.105741+00:00 [queued]>
+[2023-09-06 18:51:04,665] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ETL_products.insertar_data manual__2023-09-06T18:50:53.105741+00:00 [queued]>
+[2023-09-06 18:51:04,666] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-06 18:51:04,667] {taskinstance.py:1377} INFO - Starting attempt 1 of 4
+[2023-09-06 18:51:04,667] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-06 18:51:04,680] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): insertar_data> on 2023-09-06 18:50:53.105741+00:00
+[2023-09-06 18:51:04,688] {standard_task_runner.py:52} INFO - Started process 252 to run task
+[2023-09-06 18:51:04,696] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ETL_products', 'insertar_data', 'manual__2023-09-06T18:50:53.105741+00:00', '--job-id', '78', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmp3bmj7tfd', '--error-file', '/tmp/tmpjq9q8gb8']
+[2023-09-06 18:51:04,697] {standard_task_runner.py:80} INFO - Job 78: Subtask insertar_data
+[2023-09-06 18:51:04,777] {task_command.py:371} INFO - Running <TaskInstance: ETL_products.insertar_data manual__2023-09-06T18:50:53.105741+00:00 [running]> on host 889c80a1bf70
+[2023-09-06 18:51:04,843] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Sol
+AIRFLOW_CTX_DAG_ID=ETL_products
+AIRFLOW_CTX_TASK_ID=insertar_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-09-06T18:50:53.105741+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-09-06T18:50:53.105741+00:00
+[2023-09-06 18:51:14,500] {functions.py:115} INFO - Data inserted successfully!
+[2023-09-06 18:51:14,507] {python.py:173} INFO - Done. Returned value was: None
+[2023-09-06 18:51:14,616] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=ETL_products, task_id=insertar_data, execution_date=20230906T185053, start_date=20230906T185104, end_date=20230906T185114
+[2023-09-06 18:51:14,681] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-09-06 18:51:14,718] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
